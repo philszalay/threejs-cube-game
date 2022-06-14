@@ -1,4 +1,5 @@
 # Cube Game
+https://philszalay.github.io/Cube-Game/
 
 ## Setup
 Download [Node.js 16](https://nodejs.org/en/download/).
