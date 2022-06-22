@@ -1,7 +1,8 @@
 {
+  "homepage": "https://philszalay.github.io/Interactive-Cube-Game/",
   "scripts": {
-    "build": "webpack --config ./bundler/webpack.prod.js",
-    "dev": "webpack serve --config ./bundler/webpack.dev.js",
+    "build": "webpack --mode=production --config ./bundler/webpack.prod.js",
+    "dev": "webpack serve --mode=development --config ./bundler/webpack.dev.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
