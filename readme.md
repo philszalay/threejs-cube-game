@@ -1,5 +1,5 @@
 # Cube Game
-https://philszalay.github.io/Cube-Game/
+https://philszalay.github.io/threejs-cube-game/
 
 ## Setup
 Download [Node.js 16](https://nodejs.org/en/download/).

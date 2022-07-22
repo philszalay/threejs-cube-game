@@ -11,7 +11,7 @@ module.exports = (env, argv) => {
     {
       filename: 'bundle.[contenthash].js',
       path: path.resolve(__dirname, '../dist'),
-      publicPath: argv.mode === 'production' ? '/Cube-Game/' : '/'
+      publicPath: argv.mode === 'production' ? '/threejs-cube-game/' : '/'
     },
     devtool: 'source-map',
     plugins:
