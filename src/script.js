@@ -34,8 +34,8 @@ const cubeGeometry = new THREE.BoxBufferGeometry(1, 1, 1, cubeSegments, cubeSegm
 const cubeMaterial = new THREE.MeshBasicMaterial({
   color: colors.cube,
   wireframe: true,
-  wireframeLinejoin: 'biter',
-  wireframeLinecap: 'butt'
+  // wireframeLinejoin: 'biter',
+  // wireframeLinecap: 'butt'
 })
 
 const cube = new THREE.Mesh(cubeGeometry, cubeMaterial)
@@ -56,6 +56,7 @@ const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 1, 25
 
 const initialCameraPositionZ = 2.75
 camera.position.z = initialCameraPositionZ
+camera.position.y = 0.5
 scene.add(camera)
 
 const maxCameraMovementSpeed = 0.1
@@ -183,11 +184,12 @@ const tubeMaterial = new THREE.MeshBasicMaterial({
   wireframe: true,
   transparent: true,
   opacity: 0.2
+
 })
 
 let tube = new THREE.Mesh(tubeGeometry, tubeMaterial)
 tube.rotation.x = Math.PI / 2
-scene.add(tube)
+// scene.add(tube)
 
 // Debug with Data UI
 const gui = new dat.GUI()
@@ -224,7 +226,7 @@ gui.add(tubeMaterial, 'wireframe')
 // Start group animation
 group.add(cube)
 group.add(floor)
-group.add(tube)
+// group.add(tube)
 scene.add(group)
 
 // Clock
