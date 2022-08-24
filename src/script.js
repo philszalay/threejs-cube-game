@@ -73,6 +73,7 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+renderer.setClearColor(0x202327)
 
 /**
  * Animate
@@ -226,7 +227,7 @@ gui.add(tubeMaterial, 'wireframe')
 // Start group animation
 group.add(cube)
 group.add(floor)
-group.add(tube)
+// group.add(tube)
 scene.add(group)
 
 // Clock
