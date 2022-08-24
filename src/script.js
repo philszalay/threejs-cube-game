@@ -181,7 +181,7 @@ const tubeGeometry = new THREE.CylinderBufferGeometry(tubeRadius, tubeRadius, 20
 const tubeMaterial = new THREE.MeshBasicMaterial({
   color: 0x383f6,
   side: THREE.BackSide,
-  wireframe: true,
+  // wireframe: true,
   transparent: true,
   opacity: 0.2
 
@@ -226,7 +226,7 @@ gui.add(tubeMaterial, 'wireframe')
 // Start group animation
 group.add(cube)
 group.add(floor)
-// group.add(tube)
+group.add(tube)
 scene.add(group)
 
 // Clock
